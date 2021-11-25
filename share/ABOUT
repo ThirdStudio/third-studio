@@ -1,0 +1,9 @@
+Simplest Studio
+
+Simplest Studio is an application that allows you to convert
+and optimize audio files. The following encoding modes are implemented:
+FLAC, DFF, WAV, MP3
+
+Supported operating system: Linux x86_64.
+
+Licence: GNU GPL v.3

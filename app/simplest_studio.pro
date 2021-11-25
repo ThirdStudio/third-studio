@@ -10,31 +10,28 @@ CONFIG += c++11
 
 SOURCES += \
     about.cpp \
-    extracting.cpp \
     main.cpp \
     mainwindow.cpp \
+    message.cpp \
     progress.cpp \
     settings.cpp \
-    smartsettings.cpp \
-    taskcomplete.cpp
+    smartsettings.cpp
 
 HEADERS += \
     about.h \
-    extracting.h \
     mainwindow.h \
+    message.h \
     progress.h \
     settings.h \
-    smartsettings.h \
-    taskcomplete.h
+    smartsettings.h
 
 FORMS += \
     about.ui \
-    extracting.ui \
     mainwindow.ui \
+    message.ui \
     progress.ui \
     settings.ui \
-    smartsettings.ui \
-    taskcomplete.ui
+    smartsettings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

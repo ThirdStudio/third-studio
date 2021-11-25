@@ -1,36 +1,29 @@
 #include "about.h"
 #include "ui_about.h"
-#include <QDesktopServices>
-#include <QUrl>
 
-About::About(QWidget *parent) :
-    QDialog(parent),
-    ui_about(new Ui::About)
+
+About::About(QWidget *parent): QDialog(parent), ui(new Ui::About)
 {
-    ui_about->setupUi(this);
-    ui_about->label_11->setText("<a href=\"https://github.com/SimplestStudio/simplest-studio\">https://github.com/SimplestStudio/simplest-studio</a>");
-    ui_about->label_11->setOpenExternalLinks(true);
-    ui_about->label_12->setText("<a href=\"https://github.com/SimplestStudio/simplest-studio/blob/master/LICENSE\">License: GNU Lesser General Public License Version 3 </a>");
-    ui_about->label_12->setOpenExternalLinks(true);
+    ui->setupUi(this);
+    this->setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 }
 
 About::~About()
 {
-    delete ui_about;
+    delete ui;
 }
 
-
-void About::on_toolButton_6_clicked()
+void About::on_buttonCancel_clicked()
 {
     close();
 }
 
-void About::on_toolButton_7_clicked()
+void About::on_buttonPayPal_clicked()
 {
     QDesktopServices::openUrl(QUrl("https://paypal.me/KozhukharenkoOleg?locale.x=ru_RU", QUrl::TolerantMode));
 }
 
-void About::on_toolButton_8_clicked()
+void About::on_buttonBitcoin_clicked()
 {
-    QDesktopServices::openUrl(QUrl("https://blockchain.com/btc/payment_request?address=14ukiWCK2f8vFNPP3qKbo2vfaSGRMN63qL&amount=0.00005448&message=Cine Encoder donation", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://github.com/SimplestStudio/simplest-studio", QUrl::TolerantMode));
 }
