@@ -54,5 +54,5 @@ rm -rf %{buildroot}
 /opt/simplest_studio/bin/simplest_studio
 
 %changelog
-* Wed Sep 30 2020 Simplest Studio <depositmail@mail.ru>
+* Thu Dec 23 2021 Simplest Studio <depositmail@mail.ru>
 - Initial package for Fedora.
